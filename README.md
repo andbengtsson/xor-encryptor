@@ -47,6 +47,8 @@ It only prepares encrypted/obfuscated shellcode.
 
 ## Usage
 
+The CLI supports both short and long flags.
+
 Show help:
 
 ``` bash
@@ -54,26 +56,26 @@ python xorcrypt.py -h
 ```
 
 Basic command structure:
-
 ``` bash
 python xorcrypt.py --in <input_file> --out <output_file> --key <key> --format <format>
+```
+```bash
+python xorcrypt.py -i shellcode.bin -o encrypted.bin -k 0x42 -f c
 ```
 
 Arguments:
 
   -----------------------------------------------------------------------
-  Argument                      Description
-  ----------------------------- -----------------------------------------
-  `--in`                        Input file containing raw bytes
-
-  `--out`                       Output file for encrypted data
-
-  `--key`                       XOR key (hex single byte like `0x42` or text like `"SecretKey"`)
-
-  `--format`                    Output format: `raw`, `python`, or `c`
 
 
-------------------------------------------------------------------------
+| Short | Long       | Description                                                      |
+| ----- | ---------- | ---------------------------------------------------------------- |
+| `-i`  | `--in`     | Input file containing raw bytes                                  |
+| `-o`  | `--out`    | Output file for encrypted data                                   |
+| `-k`  | `--key`    | XOR key (hex single byte like `0x42` or text like `"SecretKey"`) |
+| `-f`  | `--format` | Output format: `raw`, `python`, or `c`                           |
+
+
 
 ## Examples
 

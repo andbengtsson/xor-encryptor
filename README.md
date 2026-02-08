@@ -68,11 +68,10 @@ Arguments:
 
   `--out`                       Output file for encrypted data
 
-  `--key`                       XOR key (hex single byte like `0x42` or
-                                text like `"SecretKey"`)
+  `--key`                       XOR key (hex single byte like `0x42` or text like `"SecretKey"`)
 
   `--format`                    Output format: `raw`, `python`, or `c`
-  -----------------------------------------------------------------------
+
 
 ------------------------------------------------------------------------
 

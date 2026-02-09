@@ -17,10 +17,10 @@ This project was created as part of a school assignment in IT security.
 
 ## What the script does
 
-1.  Reads input data as raw bytes from a file\
-2.  Parses a key from the command line\
-3.  Applies XOR byte-by-byte using a repeating key\
-4.  Formats the result based on the chosen output format\
+1.  Reads input data as raw bytes from a file
+2.  Parses a key from the command line
+3.  Applies XOR byte-by-byte using a repeating key
+4.  Formats the result based on the chosen output format
 5.  Writes the result to a file
 
 The script does **not decrypt** anything.\
@@ -30,23 +30,29 @@ It only prepares encrypted/obfuscated shellcode.
 
 ## Requirements
 
--   Python 3.10+\
+-   Python 3.10+
 -   No external libraries (standard library only)
 
 ------------------------------------------------------------------------
 
 ## File structure
 
-    xor-encryptor/
-    │
-    ├─ xorcrypt.py
-    ├─ README.md
-    ├─ .gitignore
-    └─ examples/
-       ├─ input.bin
-       ├─ output.c.txt
-       └─ output.py.txt
-    
+```
+xor-encryptor/
+│
+├─ xorcrypt.py          # Main CLI tool
+├─ README.md            # Project documentation
+├─ .gitignore           # Git ignored files
+│
+├─ assets/              # Images used in README
+│  └─ xorcrypt_banner.png
+│
+└─ examples/            # Example input/output files
+   ├─ input.bin
+   ├─ output.c.txt
+   └─ output.py.txt
+```
+
 
 ------------------------------------------------------------------------
 
@@ -181,18 +187,18 @@ Creates a formatted unsigned char array suitable for C loaders.
 
 ## Example workflow
 
-1.  Prepare an input file with raw bytes\
-2.  Choose a key\
-3.  Run the script\
+1.  Prepare an input file with raw bytes
+2.  Choose a key
+3.  Run the script
 4.  Use the output in another tool or loader
 
 ------------------------------------------------------------------------
 
 ## Notes
 
--   This tool uses XOR for **obfuscation**, not secure encryption.\
+-   This tool uses XOR for **obfuscation**, not secure encryption.
 -   The goal is to transform byte sequences and output them in useful
-    formats.\
+    formats.
 -   Designed for learning purposes and demonstration.
 
 ------------------------------------------------------------------------

@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/xor-encryptor-banner.png" width="100%">
+</p>
+
+
 # XOR Shellcode Encryptor (Python CLI)
 
 A small Python CLI tool that reads raw bytes from a file, applies XOR

@@ -133,8 +133,8 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Example usage:
-  python xorcrypt.py --in shellcode.bin --out encrypted.bin --key 0x42 --format c
-  python xorcrypt.py --in payload.bin   --out output.bin    --key "SecretKey" --format python
+  python xorcrypt.py -i shellcode.bin -o encrypted.bin -k 0x42 -f c
+  python xorcrypt.py --in payload.bin --out output.bin --key "SecretKey" --format python
         """,
     )
 

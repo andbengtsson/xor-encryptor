@@ -44,13 +44,8 @@ xor-encryptor/
 ├─ README.md            # Project documentation
 ├─ .gitignore           # Git ignored files
 │
-├─ assets/              # Images used in README
-│  └─ xorcrypt_banner.png
-│
-└─ examples/            # Example input/output files
-   ├─ input.bin
-   ├─ output.c.txt
-   └─ output.py.txt
+└─  assets/              # Image used in README
+    └─ xorcrypt_banner.png
 ```
 
 
@@ -93,7 +88,7 @@ Arguments:
 ### 1) Raw binary output
 
 ``` bash
-python xorcrypt.py --in examples/input.bin --out encrypted.bin --key 0x42 --format raw
+python xorcrypt.py --in exampleinput.bin --out encrypted.bin --key 0x42 --format raw
 ```
 
 This writes encrypted bytes directly to `encrypted.bin`.
@@ -103,7 +98,7 @@ This writes encrypted bytes directly to `encrypted.bin`.
 ### 2) C array output
 
 ``` bash
-python xorcrypt.py --in examples/input.bin --out examples/output.c.txt --key 0x42 --format c
+python xorcrypt.py --in exampleinput.bin --out exampleoutput.c.txt --key 0x42 --format c
 ```
 
 Example output:
@@ -119,7 +114,7 @@ unsigned char buf[] = {
 ### 3) Python array output
 
 ``` bash
-python xorcrypt.py --in examples/input.bin --out examples/output.py.txt --key "SecretKey" --format python
+python xorcrypt.py --in exampleinput.bin --out exampleoutput.py.txt --key "SecretKey" --format python
 ```
 
 Example output:
